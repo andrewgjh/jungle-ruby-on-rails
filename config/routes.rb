@@ -11,7 +11,14 @@ Rails.application.routes.draw do
   end
 
   get 'about', to: 'about#index'
-  
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
   resources :orders, only: [:create, :show]
 
   namespace :admin do

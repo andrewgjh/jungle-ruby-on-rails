@@ -81,3 +81,8 @@ main section.products-show {
 main section.orders-show {
   margin-bottom: 10em;
 }
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
