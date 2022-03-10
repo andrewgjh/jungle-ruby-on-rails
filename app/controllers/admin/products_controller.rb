@@ -11,7 +11,6 @@ class Admin::ProductsController < ApplicationController
   end
 
   def create
-    puts params
     @product = Product.new(product_params)
 
     if @product.save
