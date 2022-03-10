@@ -1,2 +1,3 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class="text-center">Admin Dashboard</h1>
+<h3 class="text-center">The store currently has <%= pluralize @products_count, 'product' %> listed.  </h3>
+<h3 class="text-center">The products are currently divided into <%= pluralize @categories_count, 'category' %>.</h3>
